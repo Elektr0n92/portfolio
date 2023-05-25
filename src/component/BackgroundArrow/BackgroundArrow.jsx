@@ -11,7 +11,7 @@ function BackgroundArrow({ image, name }) {
 
   return (
     <div
-      className={`container border-black border-2 w-full bg-cover flex flex-col justify-center items-center pb-5`}
+      className={`container border-black border-2 bg-cover flex flex-col justify-center items-center pb-5`}
       onClick={() => setIsExpanded(!isExpanded)}
     >
       {isExpanded && (
