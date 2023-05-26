@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.04f71483.css",
-    "main.js": "/static/js/main.7a79e658.js",
-    "static/media/ohmyfood.png": "/static/media/ohmyfood.7c2d530e124edb77bbc0.png",
-    "static/media/panthere.png": "/static/media/panthere.d665e40a4fb9eadede93.png",
-    "static/media/wallpapersden.com_showtime-retro_2560x1440.jpg": "/static/media/wallpapersden.com_showtime-retro_2560x1440.d3908c27b02ae94b884c.jpg",
-    "index.html": "/index.html",
-    "main.04f71483.css.map": "/static/css/main.04f71483.css.map",
-    "main.7a79e658.js.map": "/static/js/main.7a79e658.js.map"
+    "main.css": "/Portfolio/static/css/main.04f71483.css",
+    "main.js": "/Portfolio/static/js/main.31ac0a40.js",
+    "static/media/ohmyfood.png": "/Portfolio/static/media/ohmyfood.7c2d530e124edb77bbc0.png",
+    "static/media/panthere.png": "/Portfolio/static/media/panthere.d665e40a4fb9eadede93.png",
+    "static/media/wallpapersden.com_showtime-retro_2560x1440.jpg": "/Portfolio/static/media/wallpapersden.com_showtime-retro_2560x1440.d3908c27b02ae94b884c.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.04f71483.css.map": "/Portfolio/static/css/main.04f71483.css.map",
+    "main.31ac0a40.js.map": "/Portfolio/static/js/main.31ac0a40.js.map"
   },
   "entrypoints": [
     "static/css/main.04f71483.css",
-    "static/js/main.7a79e658.js"
+    "static/js/main.31ac0a40.js"
   ]
 }
