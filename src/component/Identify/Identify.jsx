@@ -6,7 +6,7 @@ import "./Identify.css";
 function Identify() {
   return (
     <>
-      <div className="p-7 flex flex-col border-b md:flex-row-reverse lg:flex-col items-center lg:border-r border-white">
+      <div className="p-7 flex flex-col border-b lg:border-r lg:border-b-0 md:flex-row-reverse lg:flex-col items-center border-white">
         <div className="identity-picture">
           <img src={`${IMG}`} alt="identité"></img>
         </div>
