@@ -18,18 +18,20 @@ function Home() {
     });
   };
   return (
-    <div className=" flex-row space-y-6 flex lg:flex-col lg:justify-center">
-      <div className="text-5xl font-extrabold flex">
-        {generateLetterClasses()},
+    <>
+      <div className=" flex-row space-y-6 flex lg:flex-col lg:justify-center">
+        <div className="text-5xl font-extrabold flex">
+          {generateLetterClasses()},
+        </div>
+        <div className="flex flex-wrap items-center justify-center flex-row">
+          <p>
+            Je m'appelle Timothé Lauvernier, j'ai 26 ans fezfz fze fzefze fz
+            fezfezfzihuohfizeof fds ds fsd fds fds qs d qsd sq dsq fs qf sq fsq
+            f qs f sqf sqs fq hfoiezihfoizehfizeohfzoh
+          </p>
+        </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center flex-row">
-        <p>
-          Je m'appelle Timothé Lauvernier, j'ai 26 ans fezfz fze fzefze fz
-          fezfezfzihuohfizeof fds ds fsd fds fds qs d qsd sq dsq fs qf sq fsq f
-          qs f sqf sqs fq hfoiezihfoizehfizeohfzoh
-        </p>
-      </div>
-    </div>
+    </>
   );
 }
 export default Home;
