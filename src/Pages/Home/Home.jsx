@@ -1,5 +1,16 @@
 import "./Home.css";
+import React, { useState } from "react";
+
 function Home() {
+  const [animate, setAnimate] = useState(true);
+
+  const handleClick = () => {
+    setAnimate(false);
+    setTimeout(() => {
+      setAnimate(true);
+    }, 100);
+  };
+
   const word = "BIENVENUE";
   const letterDelay = 0.1; // Décalage d'animation entre chaque lettre en secondes
 
@@ -9,7 +20,7 @@ function Home() {
       return (
         <span
           key={index}
-          className="welcome"
+          className={`${animate ? "welcome" : ""}`}
           style={{ animationDelay: `${animationDelay}s` }}
         >
           {letter}
@@ -19,8 +30,8 @@ function Home() {
   };
   return (
     <>
-      <div className=" flex-row space-y-6 flex lg:flex-col lg:justify-center">
-        <div className="text-5xl font-extrabold flex">
+      <div className=" space-y-6 flex flex-col lg:justify-center">
+        <div className="text-5xl font-extrabold flex" onClick={handleClick}>
           {generateLetterClasses()},
         </div>
         <div className="flex flex-wrap items-center justify-center flex-row">
