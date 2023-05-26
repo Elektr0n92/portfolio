@@ -1,12 +1,10 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter as Router } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Identify from "./component/Identify/Identify";
 
 function App() {
-  const isDevelopment = process.env.NODE_ENV === "development";
-  const Router = isDevelopment ? BrowserRouter : HashRouter;
   return (
     <>
       <div className="flex-col flex lg:flex-row">
