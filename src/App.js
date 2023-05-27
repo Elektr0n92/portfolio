@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Identify from "./component/Identify/Identify";
@@ -7,17 +7,18 @@ import Identify from "./component/Identify/Identify";
 function App() {
   return (
     <>
-      <div className="flex-col flex lg:flex-row">
-        <BrowserRouter>
+      <div className="flex-col flex lg:flex-row gap-14">
+        <HashRouter>
           <Identify />
 
-          <div className="page-container w-1/2 lg:w-1/5 mx-auto items-center justify-center flex flex-wrap">
+          <div className="page-container w-1/2 lg:w-1/5 mx-auto item-start lg:items-center justify-center flex flex-wrap">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/Portfolio" element={<Portfolio />} />
+              <Route path="/Projects/*" element={<Portfolio />} />
+              <Route path="*" element={<div>ERROR</div>} />
             </Routes>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </div>
       <div>DEUXIEME PAGE</div>
     </>

@@ -30,11 +30,11 @@ function Home() {
   };
   return (
     <>
-      <div className=" space-y-6 flex flex-col lg:justify-center">
+      <div className=" space-y-6 flex flex-col lg:justify-center mt-5 lg:mt-0">
         <div className="text-5xl font-extrabold flex" onClick={handleClick}>
           {generateLetterClasses()},
         </div>
-        <div className="flex flex-wrap items-center justify-center flex-row">
+        <div className="flex flex-wrap items-center justify-center flex-row font-raleway">
           <p>
             Je m'appelle Timothé Lauvernier, j'ai 26 ans fezfz fze fzefze fz
             fezfezfzihuohfizeof fds ds fsd fds fds qs d qsd sq dsq fs qf sq fsq

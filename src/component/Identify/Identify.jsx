@@ -13,7 +13,7 @@ function Identify() {
         <img src={IMG} alt="identité" />
       </div>
 
-      <div className="text-xl flex-1 lg:flex-initial text-end font-extrabold mr-6 ml-10 lg:mt-6 text-center">
+      <div className="text-xl basis-auto sm:basis-5/12 lg:flex-initial text-end font-extrabold mr-6 ml-10 lg:mt-6 text-center">
         LAUVERNIER TIMOTHE
       </div>
 
@@ -23,16 +23,28 @@ function Identify() {
         </li>
         <li>CV</li>
         <li>
-          <Link to="/portfolio">PORTFOLIO</Link>
+          <Link to="/Projects/*">PORTFOLIO</Link>
         </li>
-        <li>
-          <Link to="/contact">CONTACT</Link>
-        </li>
+        <li>CONTACT</li>
       </ul>
 
-      <ul>
+      <ul className="flex flex-row gap-4">
         <li>
           <FontAwesomeIcon icon={icon({ name: "twitter", style: "brands" })} />
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://github.com/Elektr0n92"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={icon({ name: "github", style: "brands" })} />
+          </a>
+        </li>
+        <li>
+          {" "}
+          <FontAwesomeIcon icon={icon({ name: "linkedin", style: "brands" })} />
         </li>
       </ul>
     </div>
