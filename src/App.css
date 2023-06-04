@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+html {
+  height: -webkit-fill-available;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,8 +31,12 @@
   color: #61dafb;
 }
 
-.page-container{
-  height: 100vh;
+.home{
+  height: 100svh;
+}
+
+.second-page{
+  height: 100svh;
 }
 
 @keyframes App-logo-spin {
@@ -38,5 +45,19 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .page-container {
+    height: 81svh;
+    
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
   }
 }

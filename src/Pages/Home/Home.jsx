@@ -1,8 +1,12 @@
 import "./Home.css";
-import React, { useState } from "react";
+import React, { useState, useLayoutEffect } from "react";
 
 function Home() {
-  const [animate, setAnimate] = useState(true);
+  const [animate, setAnimate] = useState(false);
+
+  useLayoutEffect(() => {
+    setAnimate(true);
+  }, []);
 
   const handleClick = () => {
     setAnimate(false);
@@ -28,21 +32,24 @@ function Home() {
       );
     });
   };
+
   return (
     <>
       <div className=" space-y-6 flex flex-col lg:justify-center mt-5 lg:mt-0">
-        <div className="text-5xl font-extrabold flex" onClick={handleClick}>
+        <div className="text-5xl font-extrabold" onClick={handleClick}>
           {generateLetterClasses()},
         </div>
         <div className="flex flex-wrap items-center justify-center flex-row font-raleway">
           <p>
-            Je m'appelle Timothé Lauvernier, j'ai 26 ans fezfz fze fzefze fz
-            fezfezfzihuohfizeof fds ds fsd fds fds qs d qsd sq dsq fs qf sq fsq
-            f qs f sqf sqs fq hfoiezihfoizehfizeohfzoh
+            Je m'appelle Timothé Lauvernier, j'ai réalisé ce petit site internet
+            afin de présenter mon profil professionnelle grâce à mes
+            compétences. Compétences que j'ai pu intégrer au cours de ma
+            formation de développeur web.
           </p>
         </div>
       </div>
     </>
   );
 }
+
 export default Home;

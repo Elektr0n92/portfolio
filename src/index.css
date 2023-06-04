@@ -2,10 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
   background-color: black;
 }
 
 *{
   color: white;
+}
+
+a.active{
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+
+li{
+  transition: transform 1s ease-in-out;
+}
+
+li:has(> a.active) {
+  transform: scale(150%);
+  transition: transform 1s ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+  li:has(> a.active) {
+    transform: none;
+    
+  }
 }

@@ -7,7 +7,7 @@ import Identify from "./component/Identify/Identify";
 function App() {
   return (
     <>
-      <div className="flex-col flex lg:flex-row gap-14">
+      <div className="home flex-col flex lg:flex-row gap-14">
         <HashRouter>
           <Identify />
 
@@ -20,7 +20,10 @@ function App() {
           </div>
         </HashRouter>
       </div>
-      <div>DEUXIEME PAGE</div>
+      <div className="second-page flex flex-col">
+        DEUXIEME PAGE
+        <div>Footer</div>
+      </div>
     </>
   );
 }
