@@ -3,6 +3,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Identify from "./component/Identify/Identify";
+import Cv from "./Pages/Cv/Cv";
 
 function App() {
   return (
@@ -10,11 +11,14 @@ function App() {
       <div className="home flex-col flex lg:flex-row gap-14">
         <HashRouter>
           <Identify />
-
-          <div className="page-container w-1/2 lg:w-1/5 mx-auto item-start lg:items-center justify-center flex flex-wrap">
+          <div
+            className="page-container w-1/2 lg:w-1/5
+             mx-auto item-start lg:items-center justify-center flex flex-wrap"
+          >
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/Projects/*" element={<Portfolio />} />
+              <Route path="/Projects" element={<Portfolio />} />
+              <Route path="/Cv" element={<Cv />} />
               <Route path="*" element={<div>ERROR</div>} />
             </Routes>
           </div>

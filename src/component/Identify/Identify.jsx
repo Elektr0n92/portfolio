@@ -21,9 +21,11 @@ function Identify() {
         <li>
           <NavLink to="/">HOME</NavLink>
         </li>
-        <li>CV</li>
         <li>
-          <NavLink to="/Projects/*">PORTFOLIO</NavLink>
+          <NavLink to="/Cv">CV</NavLink>
+        </li>
+        <li>
+          <NavLink to="/Projects">PORTFOLIO</NavLink>
         </li>
         <li>CONTACT</li>
       </ul>
