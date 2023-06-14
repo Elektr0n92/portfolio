@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 html {
-  height: -webkit-fill-available;
+  height: fill-available;
 }
 
 @media (prefers-reduced-motion: no-preference) {
