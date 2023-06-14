@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6747a14a.css",
+    "main.css": "/Portfolio/static/css/main.cb356915.css",
     "main.js": "/Portfolio/static/js/main.e2c68bb2.js",
     "static/media/ohmyfood.png": "/Portfolio/static/media/ohmyfood.7c2d530e124edb77bbc0.png",
     "static/media/panthere.png": "/Portfolio/static/media/panthere.d665e40a4fb9eadede93.png",
     "static/media/wallpapersden.com_showtime-retro_2560x1440.jpg": "/Portfolio/static/media/wallpapersden.com_showtime-retro_2560x1440.d3908c27b02ae94b884c.jpg",
     "static/media/Design sans titre.png": "/Portfolio/static/media/Design sans titre.29efac9f8292e5964f28.png",
     "index.html": "/Portfolio/index.html",
-    "main.6747a14a.css.map": "/Portfolio/static/css/main.6747a14a.css.map",
+    "main.cb356915.css.map": "/Portfolio/static/css/main.cb356915.css.map",
     "main.e2c68bb2.js.map": "/Portfolio/static/js/main.e2c68bb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.6747a14a.css",
+    "static/css/main.cb356915.css",
     "static/js/main.e2c68bb2.js"
   ]
 }
