@@ -12,7 +12,7 @@ function App() {
         <HashRouter>
           <Identify />
           <div
-            className="page-container w-1/2 lg:w-1/5
+            className="page-container w-1/2 lg:w-2/6
              mx-auto item-start lg:items-center justify-center flex flex-wrap"
           >
             <Routes>

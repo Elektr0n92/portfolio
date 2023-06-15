@@ -36,7 +36,7 @@ function Home() {
   return (
     <>
       <div className=" space-y-6 flex flex-col lg:justify-center mt-5 lg:mt-0">
-        <div className="text-5xl font-extrabold" onClick={handleClick}>
+        <div className="text-3xl lg:text-4xl  xl:text-5xl font-extrabold" onClick={handleClick}>
           {generateLetterClasses()},
         </div>
         <div className="flex flex-wrap items-center justify-center flex-row font-raleway">
