@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-import IMG from "../../Assets/wallpapersden.com_showtime-retro_2560x1440.jpg";
+import IMG from "../../Assets/identity.png";
 import "./Identify.css";
 
 function Identify() {

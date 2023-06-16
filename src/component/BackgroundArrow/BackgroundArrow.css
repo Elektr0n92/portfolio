@@ -1,8 +1,12 @@
 .container {
     position: relative;
-    background-color: rgb(213, 204, 197)
-    
+    background: linear-gradient(#ff79da, #9356dc);
+    height: 100px;
+    border-radius: 100%;
+    width: 100px;
   }
+
+  
   
   .preview-overlay {
     position: fixed;
