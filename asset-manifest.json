@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.cb356915.css",
-    "main.js": "/Portfolio/static/js/main.e2c68bb2.js",
-    "static/media/ohmyfood.png": "/Portfolio/static/media/ohmyfood.7c2d530e124edb77bbc0.png",
-    "static/media/panthere.png": "/Portfolio/static/media/panthere.d665e40a4fb9eadede93.png",
-    "static/media/wallpapersden.com_showtime-retro_2560x1440.jpg": "/Portfolio/static/media/wallpapersden.com_showtime-retro_2560x1440.d3908c27b02ae94b884c.jpg",
+    "main.css": "/Portfolio/static/css/main.9e97c717.css",
+    "main.js": "/Portfolio/static/js/main.3abbdc46.js",
     "static/media/Design sans titre.png": "/Portfolio/static/media/Design sans titre.29efac9f8292e5964f28.png",
+    "static/media/identity.png": "/Portfolio/static/media/identity.c64d2ca14e2a675c6f9e.png",
     "index.html": "/Portfolio/index.html",
-    "main.cb356915.css.map": "/Portfolio/static/css/main.cb356915.css.map",
-    "main.e2c68bb2.js.map": "/Portfolio/static/js/main.e2c68bb2.js.map"
+    "main.9e97c717.css.map": "/Portfolio/static/css/main.9e97c717.css.map",
+    "main.3abbdc46.js.map": "/Portfolio/static/js/main.3abbdc46.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb356915.css",
-    "static/js/main.e2c68bb2.js"
+    "static/css/main.9e97c717.css",
+    "static/js/main.3abbdc46.js"
   ]
 }
