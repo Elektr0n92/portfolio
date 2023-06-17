@@ -1,25 +1,31 @@
 .container {
     position: relative;
-    background: linear-gradient(#ff79da, #9356dc);
-    height: 100px;
+    height: 300px;
     border-radius: 100%;
-    width: 100px;
+    width: 300px;
+    padding: 5px;
   }
 
-  
-  
   .preview-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     z-index: 999;
     cursor: pointer;
+    gap: 2em;
+  }
+
+  .btn{
+   border: 2px solid white;
+   padding: 1em;
   }
   
   .preview-image {
@@ -30,4 +36,12 @@
 
   .separateur{
     border-color: rgb(211, 26, 165);
+  }
+
+  .KASA{
+    background-color: WHITE;
+  }
+
+  .OHMYFOOD{
+    background: linear-gradient(#ff79da, #9356dc);
   }

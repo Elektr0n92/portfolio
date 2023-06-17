@@ -1,32 +1,59 @@
 import React, { useState } from "react";
-import Portfolio from '../../Datas/Portfolio.json'
+import Portfolio from "../../Datas/Portfolio.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "./BackgroundArrow.css";
 
-function BackgroundArrow({ image, imageExpend }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [isPreviewing, setIsPreviewing] = useState(false);
-  const elements = Portfolio.elements
+function BackgroundArrow() {
+  const elements = Portfolio.elements;
+  const initialState = elements.reduce((acc, obj) => {
+    acc[obj.name] = false;
+    return acc;
+  }, {});
+  const [expandedStates, setExpandedStates] = useState(initialState);
 
-  const handlePreviewClick = () => {
-    setIsPreviewing(!isPreviewing);
+  const handlePreviewClick = (name) => {
+    setExpandedStates((prevState) => ({
+      ...prevState,
+      [name]: !prevState[name],
+    }));
   };
 
-  return (
-    elements.map((obj, index) => (
+  return elements.map((obj, index) => {
+    const concatenatedName = obj.name.replace(/\s/g, "-");
+
+    return (
       <div
-        className={`${obj.name} container border-black border-2 bg-cover flex justify-center items-center`}
-        onClick={() => setIsExpanded(!isExpanded)}
+        className={`${concatenatedName} container border-black border-2 bg-cover flex justify-center items-center`}
+        onClick={() => handlePreviewClick(obj.name)}
         key={obj.name + index}
       >
-        {isExpanded && (
-          <div className="preview-overlay" onClick={handlePreviewClick}>
-            <img src={imageExpend} alt={obj.name} className="preview-image" />
+        {expandedStates[obj.name] && (
+          <div className="preview-overlay" onClick={() => handlePreviewClick}>
+            <img
+              src={process.env.PUBLIC_URL + obj.imgExpend}
+              alt={obj.name}
+              className="preview-image"
+            />
+
+            <div className="flex items-center gap-5">
+              Lien GitHub{" "}
+              <span className="text-3xl">
+                <FontAwesomeIcon
+                  icon={icon({ name: "arrow-right", style: "solid" })}
+                />
+              </span>
+              <a href={obj.github} target="_blank" rel="noreferrer">
+                <div className="btn">{obj.github}</div>
+              </a>
+              ✅
+            </div>
           </div>
         )}
-        <img src={image} alt={obj.name} />
+        <img src={process.env.PUBLIC_URL + obj.imgLogo} alt={obj.name} />
       </div>
-    ))
-  );
+    );
+  });
 }
 
 export default BackgroundArrow;
