@@ -24,7 +24,7 @@ function BackgroundArrow() {
 
     return (
       <div
-        className={`${concatenatedName} container border-black border-2 bg-cover flex justify-center items-center`}
+        className={`${concatenatedName} container border-black border-2 bg-cover flex justify-center items-center w-24 h-24 xl:w-40 xl:h-40`}
         onClick={() => handlePreviewClick(obj.name)}
         key={obj.name + index}
       >

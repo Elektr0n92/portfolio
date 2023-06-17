@@ -1,4 +1,4 @@
-import CV from "../../Assets/Design sans titre.png";
+import CV from "../../Assets/CV.png";
 import "./Cv.css";
 function Cv() {
   return (

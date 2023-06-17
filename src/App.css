@@ -32,7 +32,7 @@ html {
 }
 
 .home{
-  height: 100svh;
+  min-height: 100svh;
 }
 
 .second-page{
