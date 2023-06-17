@@ -1,0 +1,17 @@
+ .welcome {
+    display: inline-block;
+    animation: sautille 0.5s;
+  }
+  
+  @keyframes sautille {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

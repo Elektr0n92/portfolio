@@ -1,15 +1,33 @@
 import "./App.css";
-import ohmyfood from "../src/Assets/ohmyfood.png";
-import BackgroundArrow from "./component/BackgroundArrow/BackgroundArrow";
-import Panthere from "../src/Assets/panthere.png";
+import { Routes, Route, HashRouter } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Portfolio from "./Pages/Portfolio/Portfolio";
+import Identify from "./component/Identify/Identify";
+import Cv from "./Pages/Cv/Cv";
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto py-20 px-4 sm:px-6">
-    <div className="font-extrabold text-3xl">MES PROJETS</div>
-      <div className="mt-8 flex items-center flex-row flex-wrap lg:flex-nowrap space-x-0 space-y-2 lg:space-x-2 lg:space-y-0 p-5">
-        <BackgroundArrow image={ohmyfood} name={"OHMYFOOD"} />
-        <BackgroundArrow image={Panthere} name={"LA PANTHERE"} />
+    <div className="flex flex-col">
+      <div className="home flex-col flex lg:flex-row gap-14">
+        <HashRouter>
+          <Identify />
+          <div
+            className="page-container w-1/2 lg:w-2/6
+             mx-auto item-start lg:items-center justify-center flex flex-wrap"
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Projects" element={<Portfolio />} />
+              <Route path="/Cv" element={<Cv />} />
+              <Route path="*" element={<div>ERROR</div>} />
+            </Routes>
+          </div>
+        </HashRouter>
+      </div>
+      <div className="second-page flex flex-col">
+        DEUXIEME PAGE
+        <div>Footer</div>
+
       </div>
     </div>
   );

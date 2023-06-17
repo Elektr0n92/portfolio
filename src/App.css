@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+html {
+  height: fill-available;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,11 +31,26 @@
   color: #61dafb;
 }
 
+.home{
+  min-height: 100svh;
+}
+
+.second-page{
+  height: 100svh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
   }
 }
