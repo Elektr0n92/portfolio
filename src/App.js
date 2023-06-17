@@ -7,7 +7,7 @@ import Cv from "./Pages/Cv/Cv";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col">
       <div className="home flex-col flex lg:flex-row gap-14">
         <HashRouter>
           <Identify />
@@ -28,7 +28,7 @@ function App() {
         DEUXIEME PAGE
         <div>Footer</div>
       </div>
-    </>
+    </div>
   );
 }
 
