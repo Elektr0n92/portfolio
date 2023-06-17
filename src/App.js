@@ -27,6 +27,7 @@ function App() {
       <div className="second-page flex flex-col">
         DEUXIEME PAGE
         <div>Footer</div>
+
       </div>
     </div>
   );
