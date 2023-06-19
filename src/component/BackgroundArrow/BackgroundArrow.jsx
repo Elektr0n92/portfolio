@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Portfolio from "../../Datas/Portfolio.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
@@ -11,6 +11,18 @@ function BackgroundArrow() {
     return acc;
   }, {});
   const [expandedStates, setExpandedStates] = useState(initialState);
+
+  useEffect(() => {
+    // Gérer la modification de la propriété CSS du body
+    const hasExpandedState = Object.values(expandedStates).some(
+      (state) => state
+    );
+    if (hasExpandedState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [expandedStates]);
 
   const handlePreviewClick = (name) => {
     setExpandedStates((prevState) => ({
@@ -46,7 +58,6 @@ function BackgroundArrow() {
               <a href={obj.github} target="_blank" rel="noreferrer">
                 <div className="btn">{obj.github}</div>
               </a>
-              ✅
             </div>
           </div>
         )}
@@ -57,4 +68,3 @@ function BackgroundArrow() {
 }
 
 export default BackgroundArrow;
-
