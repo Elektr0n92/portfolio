@@ -41,10 +41,7 @@ function BackgroundArrow() {
         key={obj.name + index}
       >
         {expandedStates[obj.name] && (
-          <div
-            className="preview-overlay"
-            onClick={() => handlePreviewClick(obj.name)}
-          >
+          <div className="preview-overlay" onClick={() => handlePreviewClick}>
             <img
               src={process.env.PUBLIC_URL + obj.imgExpend}
               alt={obj.name}
@@ -61,7 +58,6 @@ function BackgroundArrow() {
               <a href={obj.github} target="_blank" rel="noreferrer">
                 <div className="btn">{obj.github}</div>
               </a>
-              ✅
             </div>
           </div>
         )}

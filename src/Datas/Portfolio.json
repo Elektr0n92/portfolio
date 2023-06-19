@@ -16,6 +16,7 @@
       {
         "name" : "KASA",
         "imgLogo" : "/images/KasaLogo.png",
+        "imgExpend" : "/images/kasaPreview.png",
         "github" : "https://elektr0n92.github.io/kasa"
       }
     ]
