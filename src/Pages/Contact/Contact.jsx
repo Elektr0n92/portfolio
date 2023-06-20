@@ -1,10 +1,6 @@
 import Mail from "../../component/mail/Mail";
 function Contact() {
-  return (
-    <div>
-      <Mail />
-    </div>
-  );
+  return <Mail />;
 }
 
 export default Contact;
