@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Identify from "./component/Identify/Identify";
 import Cv from "./Pages/Cv/Cv";
+import Contact from "./Pages/Contact/Contact.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/Projects" element={<Portfolio />} />
               <Route path="/Cv" element={<Cv />} />
+              <Route path="/Contact" element={<Contact />} />
               <Route path="*" element={<div>ERROR</div>} />
             </Routes>
           </div>
@@ -27,7 +29,6 @@ function App() {
       <div className="second-page flex flex-col">
         DEUXIEME PAGE
         <div>Footer</div>
-
       </div>
     </div>
   );
