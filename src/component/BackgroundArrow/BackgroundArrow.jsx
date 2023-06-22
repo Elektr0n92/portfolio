@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Portfolio from "../../Datas/Portfolio.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { css } from "@emotion/react";
 import { RingLoader } from "react-spinners";
 import "./BackgroundArrow.css";
 
@@ -65,7 +64,7 @@ function BackgroundArrow() {
           >
             {isLoading ? (
               <div className="spinner-container">
-                <RingLoader css={spinnerStyles} size={60} color={"#123abc"} />
+                <RingLoader size={100} color={"#123abc"} />
               </div>
             ) : (
               <>
@@ -98,10 +97,3 @@ function BackgroundArrow() {
 }
 
 export default BackgroundArrow;
-
-const spinnerStyles = css`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-`;
