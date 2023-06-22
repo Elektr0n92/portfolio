@@ -58,7 +58,11 @@ function BackgroundArrow() {
         key={obj.name + index}
       >
         {expandedStates[obj.name] && (
-          <div className="preview-overlay" onClick={() => handlePreviewClick}>
+          <div
+            className="preview-overlay"
+            onClick={() => handlePreviewClick}
+            onLoad={() => handleImageLoad}
+          >
             {isLoading ? (
               <div className="spinner-container">
                 <RingLoader css={spinnerStyles} size={60} color={"#123abc"} />
@@ -69,7 +73,6 @@ function BackgroundArrow() {
                   src={process.env.PUBLIC_URL + obj.imgExpend}
                   alt={obj.name}
                   className="preview-image"
-                  onLoad={() => handleImageLoad}
                   onError={handleImageError}
                 />
 
