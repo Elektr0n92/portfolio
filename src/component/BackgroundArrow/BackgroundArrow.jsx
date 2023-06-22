@@ -10,15 +10,15 @@ function BackgroundArrow() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleImageLoad = () => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // Délai de 2000 millisecondes (2 secondes)
+    setIsLoading(false);
   };
 
   const handleImageError = () => {};
 
   useEffect(() => {
-    handleImageLoad();
+    setTimeout(() => {
+      handleImageLoad();
+    }, 2500); // Délai de 2000 millisecondes (2 secondes)
   }, [isLoading]);
 
   const elements = Portfolio.elements;
