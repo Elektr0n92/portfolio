@@ -17,7 +17,7 @@ function BackgroundArrow() {
   useEffect(() => {
     setTimeout(() => {
       handleImageLoad();
-    }, 2500); // Délai de 2000 millisecondes (2 secondes)
+    }, 0); // Délai de 2000 millisecondes (2 secondes)
   }, [isLoading]);
 
   const elements = Portfolio.elements;
