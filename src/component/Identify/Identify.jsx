@@ -27,7 +27,9 @@ function Identify() {
         <li>
           <NavLink to="/Projects">PORTFOLIO</NavLink>
         </li>
-        <li>CONTACT</li>
+        <li>
+          <NavLink to="/Contact">CONTACT</NavLink>
+        </li>
       </ul>
 
       <ul className="flex flex-row gap-4 tems-center justify-center md:basis-full lg:basis-auto">

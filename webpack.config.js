@@ -1,5 +1,13 @@
+const Dotenv = require("dotenv-webpack");
+
 module.exports = {
-  // ...
+  resolve: {
+    fallback: {
+      stream: require.resolve("stream-browserify"),
+      buffer: require.resolve("buffer/"),
+      crypto: require.resolve("crypto-browserify"),
+    },
+  },
   module: {
     rules: [
       {
@@ -17,6 +25,10 @@ module.exports = {
           },
         ],
       },
+    ],
+    plugins: [
+      new Dotenv(),
+      // ...
     ],
   },
   // ...
