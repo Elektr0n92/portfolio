@@ -44,7 +44,6 @@ const ContactUs = () => {
         <textarea name="message" required />
         <input type="submit" value="Send" className="text-white border mt-5" />
       </form>
-      <div>{message} voila</div>
     </>
   );
 };

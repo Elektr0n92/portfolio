@@ -3,7 +3,9 @@ import "./Cv.css";
 function Cv() {
   return (
     <div className="max-h-full">
-      <img src={CV} alt="CV" className="max-h-full" />
+      <a href={CV} alt="CV">
+        <img src={CV} alt="CV" className="max-h-full" />
+      </a>
     </div>
   );
 }
