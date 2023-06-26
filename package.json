@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "homepage": "https://Elektr0n92.github.io/Portfolio/",
+  "homepage": "https://Elektr0n92.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
