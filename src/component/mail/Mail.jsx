@@ -38,6 +38,7 @@ const ContactUs = () => {
         console.log(result.text);
         alert("Message envoyé");
         form.current.reset();
+        recaptchaRef.current.reset();
         setIsLoading(false);
       },
       (error) => {
