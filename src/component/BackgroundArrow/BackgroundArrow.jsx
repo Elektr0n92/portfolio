@@ -52,7 +52,7 @@ function BackgroundArrow() {
 
     return (
       <div
-        className={`${concatenatedName} container border-black border-2 bg-cover flex justify-center items-center w-24 h-24 xl:w-40 xl:h-40`}
+        className={`${concatenatedName} container border-black border-2 bg-cover flex justify-center items-center w-16 h-16 sm:w-24 sm:h-24 xl:w-40 xl:h-40`}
         onClick={() => handlePreviewClick(obj.name)}
         key={obj.name + index}
       >
@@ -76,7 +76,7 @@ function BackgroundArrow() {
                 />
 
                 <div className="flex items-center gap-5">
-                  Lien GitHub{" "}
+                  Lien GitHub
                   <span className="text-3xl">
                     <FontAwesomeIcon
                       icon={icon({ name: "arrow-right", style: "solid" })}
