@@ -14,6 +14,10 @@
     margin-top: 4em;
 }
 
+li{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .name{
       flex-basis: auto;
