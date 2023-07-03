@@ -77,7 +77,7 @@ const ContactUs = () => {
         </div>
         <input
           type="submit"
-          value="Send"
+          value="ENVOYER"
           className="text-white border mt-5 cursor-pointer hover:ring-2 ring-white hover:ring-opacity-50"
         />
       </form>
