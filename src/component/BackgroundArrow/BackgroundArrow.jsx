@@ -58,7 +58,7 @@ function BackgroundArrow() {
       >
         {expandedStates[obj.name] && (
           <div
-            className="preview-overlay"
+            className="preview-overlay gap-3 lg:gap-10"
             onClick={() => handlePreviewClick}
             onLoad={() => handleImageLoad}
           >
@@ -75,9 +75,9 @@ function BackgroundArrow() {
                   onError={handleImageError}
                 />
 
-                <div className="flex items-center gap-5">
+                <div className="flex flex-col items-center gap-2 lg:gap-5 lg:flex-row ">
                   Lien GitHub
-                  <span className="text-3xl">
+                  <span className="text-3xl rotate-90 lg:rotate-0">
                     <FontAwesomeIcon
                       icon={icon({ name: "arrow-right", style: "solid" })}
                     />

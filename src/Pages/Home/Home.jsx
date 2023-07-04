@@ -41,10 +41,8 @@ function Home() {
         </div>
         <div className="flex flex-wrap items-center justify-center flex-row font-raleway">
           <p>
-            Je m'appelle Timothé Lauvernier, j'ai réalisé ce petit site internet
-            afin de présenter mon profil professionnelle grâce à mes
-            compétences. Compétences que j'ai pu intégrer au cours de ma
-            formation de développeur web.
+            Je suis développeur WEB, actuellement en recherche d'emploi je vous propose ici mon site qui sert de répertoire pour mes portfolios,
+            mais aussi des informations.
           </p>
         </div>
       </div>
