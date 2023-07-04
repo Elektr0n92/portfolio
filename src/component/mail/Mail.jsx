@@ -10,7 +10,7 @@ const publicKeyRecapcha = process.env.REACT_APP_RECAPCHA;
 
 const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [message, setMessage] = useState("");
+  const [setMessage] = useState("");
   const form = useRef();
   const recaptchaRef = useRef();
 
