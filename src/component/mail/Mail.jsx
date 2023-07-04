@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 import { RingLoader } from "react-spinners";
@@ -10,16 +10,8 @@ const publicKeyRecapcha = process.env.REACT_APP_RECAPCHA;
 
 const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [setMessage] = useState("");
   const form = useRef();
   const recaptchaRef = useRef();
-
-  useEffect(() => {
-    fetch("http://localhost:3001/api/hello")
-      .then((response) => response.json())
-      .then((data) => setMessage(data.message))
-      .catch((error) => console.log(error));
-  }, []);
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
