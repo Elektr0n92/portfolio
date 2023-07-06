@@ -33,6 +33,12 @@ function Home() {
   };
 
   useEffect(() => {
+    if (mobile) {
+      setShowTooltip(false);
+    }
+  }, [mobile]);
+
+  useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };

@@ -15,7 +15,7 @@ function App() {
         <Identify />
         <div
           className={`page-container lg:w-2/6 mx-auto item-start lg:items-center justify-center flex flex-wrap ${
-            location.pathname === "/Projects" ? "w-full lg:w-auto" : "w-1/2 "
+            location.pathname === "/Projects" ? "w-full lg:w-auto" : "w-11/12 "
           }`}
         >
           <Routes>
