@@ -15,3 +15,18 @@
     }
   }
   
+  .tooltip-content {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+ 
+  }
+
+  .tooltip-container {
+    position: relative;
+    
+    cursor: pointer;
+  }
+  
