@@ -41,8 +41,8 @@ function Home() {
         </div>
         <div className="flex flex-wrap items-center justify-center flex-row font-raleway">
           <p>
-            Je suis développeur WEB, actuellement en recherche d'emploi je vous propose ici mon site qui sert de répertoire pour mes portfolios,
-            mais aussi des informations.
+            Je suis développeur WEB, actuellement en recherche d'emploi je vous présente ici mon site qui sert de répertoire pour mes portfolios,
+            mais aussi des informations à mon sujet.
           </p>
         </div>
       </div>
