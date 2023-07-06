@@ -36,13 +36,28 @@ function Home() {
   return (
     <>
       <div className=" space-y-6 flex flex-col lg:justify-center mt-5 lg:mt-0">
-        <div className="text-3xl lg:text-4xl  xl:text-5xl font-extrabold" onClick={handleClick}>
+        <div
+          className="text-3xl lg:text-4xl  xl:text-5xl font-extrabold"
+          onClick={handleClick}
+        >
           {generateLetterClasses()},
         </div>
-        <div className="flex flex-wrap items-center justify-center flex-row font-raleway">
+        <div className="flex flex-wrap items-center flex-row font-raleway">
           <p>
-            Je suis développeur WEB, actuellement en recherche d'emploi je vous présente ici mon site qui sert de répertoire pour mes portfolios,
-            mais aussi des informations à mon sujet.
+            Je suis développeur WEB, actuellement en recherche d'emploi.
+            <br /> Je vous présente ici mon site qui sert de répertoire
+            présentant mes infos profesionnelles comme par exemple mes
+            différentes réalisations au cours de ma formation ou bien les
+            différentes plateformes sur lesquelles je suis présent.
+          </p>
+          <p className="">
+            Ce site a été réalisé par le biais de différents
+            languages/frameworks : React, tailwindCSS...
+          </p>
+          <p className="italic flex justify-center mt-5">
+            Ce site est suceptible d'être mise à jour afin d'apporter des
+            corrections/améliorations de l'expérience utilisateurs/ajout de
+            contenus...
           </p>
         </div>
       </div>
