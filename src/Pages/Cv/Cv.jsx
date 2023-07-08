@@ -1,4 +1,4 @@
-import CV from "../../Assets/CV.png";
+import CV from "../../Assets/CV.webp";
 import "./Cv.css";
 function Cv() {
   return (
