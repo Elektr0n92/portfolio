@@ -86,8 +86,8 @@ function Home() {
             différentes plateformes sur lesquelles je suis présent.
           </p>
           <p className="">
-            Ce site a été réalisé par le biais de différents
-            languages/frameworks : React, tailwindCSS...
+            Ce site a été réalisé par le biais de différents langages/frameworks
+            : React, tailwindCSS...
           </p>
           <p className="italic flex justify-center mt-10 gap-5 items-center w-full">
             <div className="flex flex-col justify-center item-center gap-5 lg:gap-0">
