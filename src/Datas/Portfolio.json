@@ -10,13 +10,13 @@
       {
         "name": "LA PANTHERE",
         "imgLogo" : "/images/PanthereLogo.png",
-        "imgExpend": "/images/panthere.png",
+        "imgExpend": "/images/panthere.webp",
         "github" : "https://elektr0n92.github.io/La-Panthere/"
       },
       {
         "name" : "KASA",
         "imgLogo" : "/images/KasaLogo.png",
-        "imgExpend" : "/images/kasaPreview.png",
+        "imgExpend" : "/images/kasaPreview.webp",
         "github" : "https://elektr0n92.github.io/kasa"
       }
     ]
