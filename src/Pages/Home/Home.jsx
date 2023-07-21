@@ -79,15 +79,29 @@ function Home() {
         </div>
         <div className="flex flex-wrap items-center flex-row font-raleway">
           <p>
-            Je suis développeur WEB, actuellement en recherche d'emploi.
-            <br /> Je vous présente ici mon site qui sert de répertoire
-            présentant mes infos profesionnelles comme par exemple mes
-            différentes réalisations au cours de ma formation ou bien les
-            différentes plateformes sur lesquelles je suis présent.
+            Développeur WEB actuellement en recherche d'emploi, je répertorie
+            sur cette application web :
+            <ul className="list-disc m-5">
+              <li>
+                Mon parcours professionnel, mes compétences et centres
+                d'intérêt.
+              </li>
+              <li>
+                Les différents projets que j'ai réalisés au cours de ma
+                formation.
+              </li>
+              <li>Les réseaux sociaux sur lesquels je suis actif</li>
+            </ul>
           </p>
           <p className="">
-            Ce site a été réalisé par le biais de différents langages/frameworks
-            : React, tailwindCSS...
+            Ce site a été réalisé par le biais de différents
+            langages(JavaScript, HTML et CSS). Afin d'optimiser son
+            développement, j'ai appliqué les frameworks React et tailwindCSS.
+            L'application web a été propulsée par CRA.
+          </p>
+          <p className="mt-2">
+            Ces langages et outils précités étant une liste non-exhaustive des
+            stacks technologiques que je maîtrise
           </p>
           <p className="italic flex justify-center mt-10 gap-5 items-center w-full">
             <div className="flex flex-col justify-center item-center gap-5 lg:gap-0">
