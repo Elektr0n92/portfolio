@@ -27,12 +27,9 @@ function App() {
           </Routes>
         </div>
       </div>
-      <div className="second-page flex flex-col">
-        DEUXIEME PAGE
-        <div>Footer</div>
-      </div>
     </div>
   );
 }
+//<div className="second-page flex flex-col"></div> => Deuxieme page
 
 export default App;
