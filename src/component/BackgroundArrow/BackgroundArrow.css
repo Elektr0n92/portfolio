@@ -29,13 +29,20 @@
    border: 2px solid white;
    padding: 1em;
   }
+
+  .photo{
+    height: 709px;
+    width: auto;
+
+  }
   
+  /*
   .preview-image {
-    width: 100%;
+    width: 50%;
     height: 80%;
     object-fit: contain;
   }
-
+*/
   .separateur{
     border-color: rgb(211, 26, 165);
   }
@@ -46,4 +53,22 @@
 
   .OHMYFOOD{
     background: linear-gradient(#ff79da, #9356dc);
+  }
+
+  @keyframes slideRight {
+    from {
+      transform: translateX(0%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+  }
+
+  .animate-slideRight {
+    animation: slideRight 1.5s forwards; /* Ajustez la durée d'animation si nécessaire */
+  }
+  .text-appear{
+    right: -6em;
   }

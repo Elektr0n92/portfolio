@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Portfolio from "../../Datas/Portfolio.json";
+import TextAppear from "./TextAppear";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { RingLoader } from "react-spinners";
@@ -68,14 +69,19 @@ function BackgroundArrow() {
               </div>
             ) : (
               <>
-                <img
-                  src={process.env.PUBLIC_URL + obj.imgExpend}
-                  alt={obj.name}
-                  className="preview-image"
-                  onError={handleImageError}
-                />
+                <div className="flex flex-row divP justify-center w-full">
+                  <div className="photo relative w-2/5">
+                    <img
+                      src={process.env.PUBLIC_URL + obj.imgExpend}
+                      alt={obj.name}
+                      className="h-full"
+                      onError={handleImageError}
+                    />
 
-                <div className="flex flex-col items-center gap-2 lg:gap-5 lg:flex-row ">
+                    <TextAppear title={obj.name} />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center gap-2 lg:gap-5 lg:flex-row div3">
                   Lien GitHub
                   <span className="text-3xl rotate-90 lg:rotate-0">
                     <FontAwesomeIcon

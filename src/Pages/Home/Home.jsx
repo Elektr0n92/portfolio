@@ -121,7 +121,7 @@ function Home() {
               )}
             </div>
             {mobile
-              ? "Ce site est susceptible d'être mise à jour afin d'apporter des corrections/améliorations de l'expérience utilisateurs/ajout de contenus..."
+              ? "Ce site est susceptible d'être mis à jour afin d'apporter des corrections, des améliorations de l'expérience utilisateur et l'ajout de contenus."
               : null}
           </p>
         </div>
