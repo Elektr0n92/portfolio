@@ -5,18 +5,33 @@
         "name": "OHMYFOOD",
         "imgLogo": "/images/ohmyfoodLogo.png",
         "imgExpend": "/images/ohmyfood.webp",
+        "description": [{
+          "firstline" : "Voici le déroulé du scenario : ",
+          "after" : ["deuxieme ligne",
+        "troisieme ligne"]
+        }],
         "github" : "https://elektr0n92.github.io/Ohmyfood-/"
       },
       {
         "name": "LA PANTHERE",
         "imgLogo" : "/images/PanthereLogo.png",
         "imgExpend": "/images/panthere.webp",
+        "description": [{
+          "firstline" : "Voici le déroulé du scenario :",
+          "after" : ["deuxieme ligne ahah",
+        "troisieme ligne"]
+        }],
         "github" : "https://elektr0n92.github.io/La-Panthere/"
       },
       {
         "name" : "KASA",
         "imgLogo" : "/images/KasaLogo.png",
         "imgExpend" : "/images/kasaPreview.webp",
+        "description": [{
+          "firstline" : "Voici le déroulé du scenario :",
+          "after" : ["deuxieme ligne",
+        "troisieme ligne"]
+        }],
         "github" : "https://elektr0n92.github.io/kasa"
       }
     ]

@@ -26,6 +26,7 @@ function BackgroundArrow() {
     acc[obj.name] = false;
     return acc;
   }, {});
+
   const [expandedStates, setExpandedStates] = useState(initialState);
 
   useEffect(() => {
@@ -47,10 +48,8 @@ function BackgroundArrow() {
     }));
     setIsLoading(true);
   };
-
   return elements.map((obj, index) => {
     const concatenatedName = obj.name.replace(/\s/g, "-");
-
     return (
       <div
         className={`${concatenatedName} container border-black border-2 bg-cover flex justify-center items-center w-16 h-16 sm:w-24 sm:h-24 xl:w-40 xl:h-40`}
@@ -77,8 +76,10 @@ function BackgroundArrow() {
                       className="h-full"
                       onError={handleImageError}
                     />
-
-                    <TextAppear title={obj.name} />
+                    <TextAppear
+                      title={obj.name}
+                      description={obj.description}
+                    />
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-2 lg:gap-5 lg:flex-row div3">

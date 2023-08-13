@@ -66,9 +66,24 @@
     }
   }
 
+  @keyframes TextAppear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .animate-slideRight {
     animation: slideRight 1.5s forwards; /* Ajustez la durée d'animation si nécessaire */
   }
+
+  .animate-TextAppear {
+    animation: 1.5s TextAppear 1.5s forwards; /* Ajustez la durée d'animation si nécessaire */
+ 
+  }
   .text-appear{
     right: -6em;
+    background-color: #060808;
   }
