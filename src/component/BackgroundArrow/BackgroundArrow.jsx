@@ -8,6 +8,7 @@ import "./BackgroundArrow.css";
 
 function BackgroundArrow() {
   const [isLoading, setIsLoading] = useState(false);
+  const [textAppearHovered, setTextAppearHovered] = useState(false); // État partagé
 
   const handleImageLoad = () => {
     setIsLoading(false);
@@ -48,6 +49,7 @@ function BackgroundArrow() {
     }));
     setIsLoading(true);
   };
+
   return elements.map((obj, index) => {
     const concatenatedName = obj.name.replace(/\s/g, "-");
     return (
@@ -58,7 +60,9 @@ function BackgroundArrow() {
       >
         {expandedStates[obj.name] && (
           <div
-            className="preview-overlay gap-3 lg:gap-10"
+            className={`preview-overlay gap-3 lg:gap-10 ${
+              textAppearHovered ? "text-appear-hovered" : ""
+            }`}
             onClick={() => handlePreviewClick}
             onLoad={() => handleImageLoad}
           >
@@ -68,19 +72,30 @@ function BackgroundArrow() {
               </div>
             ) : (
               <>
-                <div className="flex flex-row divP justify-center w-full">
-                  <div className="photo relative w-2/5">
+                <div
+                  className="flex flex-row divP justify-center w-full"
+                  onMouseLeave={() => {
+                    setTextAppearHovered(false); // Réinitialiser l'état partagé
+                  }}
+                >
+                  <div
+                    className={`photo`}
+                    onMouseEnter={() => {
+                      setTextAppearHovered(true); // Définir l'état partagé
+                    }}
+                  >
                     <img
                       src={process.env.PUBLIC_URL + obj.imgExpend}
                       alt={obj.name}
                       className="h-full"
                       onError={handleImageError}
                     />
-                    <TextAppear
-                      title={obj.name}
-                      description={obj.description}
-                    />
                   </div>
+                  <TextAppear
+                    title={obj.name}
+                    description={obj.description}
+                    isHovered={textAppearHovered} // Passer l'état partagé à TextAppear
+                  />
                 </div>
                 <div className="flex flex-col items-center gap-2 lg:gap-5 lg:flex-row div3">
                   Lien GitHub

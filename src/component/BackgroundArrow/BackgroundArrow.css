@@ -20,9 +20,11 @@
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     z-index: 999;
+    overflow: hidden; /* Empêche le contenu élargi de déborder */
+    transition: opacity 0.3s; /* Ajoutez une transition d'opacité */
+    flex-direction: column;
   }
 
   .btn{
@@ -31,18 +33,23 @@
   }
 
   .photo{
-    height: 709px;
+    height: 100%;
     width: auto;
+    display: flex;
+    animation: slidePhoto 3s forwards;
+      
+  }
 
+  .divP{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    animation: slideRight 1s forwards;
+    height: 709px;
+    gap:2em;
   }
-  
-  /*
-  .preview-image {
-    width: 50%;
-    height: 80%;
-    object-fit: contain;
-  }
-*/
+
   .separateur{
     border-color: rgb(211, 26, 165);
   }
@@ -55,13 +62,37 @@
     background: linear-gradient(#ff79da, #9356dc);
   }
 
-  @keyframes slideRight {
+  
+  @keyframes slidePhoto {
     from {
-      transform: translateX(0%);
-      opacity: 0;
+     transform: translateX(50%)
+     
     }
     to {
-      transform: translateX(100%);
+      transform: translateX(0%)
+    
+    }
+  }
+
+
+  @keyframes slideRight {
+    from {
+      gap: 0;
+     
+    }
+    to {
+     gap: 5em;
+    
+    }
+  }
+
+  @keyframes TextAppearRight {
+    from {
+      transform: translateX(-20%);
+     opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
       opacity: 1;
     }
   }
@@ -84,6 +115,35 @@
  
   }
   .text-appear{
-    right: -6em;
     background-color: #060808;
   }
+
+  .text-appear-container {
+    flex: 0 0 30%;
+  transition: flex 2s, background-color 2s;
+  height: 100%;
+  border: 2px solid white;
+  opacity: 0;
+  animation: TextAppearRight 2s 1s forwards;
+
+  }
+  
+  .text-container {
+   
+    width: auto;
+  
+    color: black;
+    padding: 10px;
+    pointer-events: none;
+  }
+  
+  .description-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .firstline {
+    font-weight: bold;
+  }
+  
